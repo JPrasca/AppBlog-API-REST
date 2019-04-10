@@ -128,4 +128,5 @@ class CategoryController extends Controller
         //devolver  respuesta   
         return response()->json($data, $data['code']);
     }
+
 }

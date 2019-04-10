@@ -46,3 +46,10 @@ Route::get('api/user/detail/{id}', 'UserController@detail');
 
 //Categorias
 Route::resource('api/category', 'CategoryController');
+
+//posts
+Route::resource('api/post', 'PostController');
+Route::post('api/post/upload', 'PostController@upload');
+Route::get('api/post/image/{filename}', 'PostController@getImage');
+Route::get('api/post/user/{id}', 'PostController@getPostByUser');
+Route::get('api/post/category/{id}', 'PostController@getPostByCategory');

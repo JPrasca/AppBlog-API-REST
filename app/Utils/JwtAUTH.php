@@ -25,6 +25,7 @@ class JwtAUTH {
         $this->key = 'Esto_es_una_key_0123456789';
     }
 
+    //
     public function signup($email, $password, $getToken = null) {
 
         //Buscar si existe el usuario por las credenciales
@@ -70,6 +71,7 @@ class JwtAUTH {
         return $data;
     }
 
+    //
     public function checkToken($jwt, $getIdentity = false) {
         $auth = false;
 
